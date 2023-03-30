@@ -1,0 +1,131 @@
+.about{
+    
+    &__title{
+        position: relative;
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 35px;
+        color: rgb(231, 235, 239);
+        &:before{
+            content: " ";
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            border-radius: 50%;
+            z-index:-1;
+            top: -3px;
+            left: 46.3%;
+            background: rgb(16, 16, 164);
+        }
+      
+    }
+    &__subtitle{
+        text-align: center;
+        font-size: 27px;
+        font-weight: 900;
+    }
+    &__divider{
+        width: 100px;
+        height: 3px;
+        background-color: blue;
+        margin: 15px auto;
+    }
+    &__wrapper{
+        padding: 50px 65px;
+        display: grid;
+        grid-template-columns:repeat(2,430px);
+        column-gap: 140px;
+
+    }
+    &__collumn{
+
+        &-title{
+            position: relative;
+            padding-left: 35px;
+            font-size: 18px;
+            font-weight: 800;
+            &:before{
+                content: "";
+                position: absolute;
+                left: -13px;
+                transform: translateY(-15%);
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 22.5px solid blue;
+
+            }
+        }
+        ul{
+            list-style-type: none;
+            li{
+                position: relative;
+                &:after{
+                    content: " ";
+                    width: 1.5px;
+                    height: 100%;
+                    position: absolute;
+                    top:-5%;
+                    left: 0;
+                    background-color: black;
+                }
+            }
+        }
+
+    }
+    &__item{
+        position: relative;
+        &:before{
+            content: " ";
+            position: absolute;
+            top:43px;
+            height: 1.5px;
+            width: 39.3px;
+            background-color: black;
+        }
+        &-header{
+          position: relative;
+            padding: 40px 0 0 100px;
+        }
+        &-title{
+            position: absolute;
+            font-size: 15px;
+            font-weight: 700;
+            top:20px;
+           
+        }
+        &-location{
+            position: absolute;
+            font-size: 15px;
+            font-weight: 800;
+            top:46px;
+            left: 108px;
+        }
+        &-text{
+            margin-left: 40px;
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: 800;
+
+        }
+        &-icon{
+            position: absolute;
+            left: 42px;
+            top:30px;
+             &:before{
+                content: " ";
+                position:absolute;
+                width: 43px;
+                height: 43px;
+                border-radius: 50%;
+                z-index: -1;
+                top: -6px;
+                left: -4px;
+                background: rgb(16, 16, 164);
+            }
+
+        }
+    }
+}

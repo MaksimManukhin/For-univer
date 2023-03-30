@@ -1,0 +1,26 @@
+@mixin before_cicrle{
+    &:before{
+        content: " ";
+        position:absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        z-index: -1;
+        top: -6px;
+        left: -1px;
+        background: rgb(16, 16, 164);
+    }
+}
+@mixin before_oval{
+    &:before{
+        content: " ";
+        position: absolute;
+        width: 74px;
+        height: 37px;
+        border-radius: 50%;
+        z-index:-1;
+        top: -6px;
+        left: -6px;
+        background: rgb(16, 16, 164);
+    }
+}

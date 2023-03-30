@@ -1,0 +1,38 @@
+.main{
+    position: relative;
+    min-height: 75vh;
+    background: url("../../../src/img/main.jpg") no-repeat 50% / cover;
+    
+    padding-top: 205px;
+    &__title{
+        width: 535px;
+        margin-top:10px;
+        font-size: 36px;
+    }
+    &__subtitle{
+        position: relative;
+        padding-left: 10px;
+        @include before_cicrle;
+        z-index: 2;
+        
+    }
+    &__btns{
+        display: flex;
+        width: 250px;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: space-between;
+        transform: translateX(-10.2px);
+    }
+    &__link{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 20px;
+        
+        &:hover{
+            color: white;
+            transition: 1s all;
+        }
+    }
+}

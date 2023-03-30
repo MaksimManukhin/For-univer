@@ -1,0 +1,35 @@
+@import "base/mixins";
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#prime{
+    transition: 1.5s ease;
+}
+
+
+
+
+
+
+
+@import"blocks/main";
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/sidepanel";
+@import "blocks/second";
+@import "blocks/about";
+@import "blocks/third";
+@import "blocks/pageup";
+@import "blocks/contacts";
+@import"blocks/media";
+@import "blocks/modal";
+@import "blocks/steps"
